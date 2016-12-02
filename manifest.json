@@ -1,0 +1,37 @@
+{
+   "author": "Vendatta",
+   "background": {
+      "scripts": [ "js/jquery.js", "js/Process.js", "js/Background.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "128": "images/icon128.png",
+         "256": "images/icon256.png",
+         "64": "images/icon64.png",
+         "48": "images/icon48.png",
+         "32": "images/icon32.png",
+         "19": "images/icon19.png"
+      },
+      "default_title": "Vendatta affiliate marketing"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/jquery.js", "js/ContentPage.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   } ],
+   "description": "Vendatta affiliate marketing",
+   "icons": {
+      "128": "images/icon128.png",
+      "256": "images/icon256.png",
+      "64": "images/icon64.png",
+      "48": "images/icon48.png",
+      "32": "images/icon32.png",
+      "19": "images/icon19.png"
+   },
+   "manifest_version": 2,
+   "name": "Vext",
+   "options_page": "options/options.html",
+   "permissions": [ "tabs", "storage" ],
+   "version": "1.0"
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vext affliating</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+    #errorStr {
+        color: red;
+    }
+    
+    #form {
+        border: 1px solid black;
+        width: 40%;
+        padding: 0 3em 3em 3em;
+        box-shadow: 0px 0px 5px #888;
+        margin: 10% auto;
+    }
+    
+    .center {
+        text-align: center;
+        margin: 5% auto;
+    }
+    
+    input[type="text"] {
+        margin: 0.5em;
+        padding: 10px;
+    }
+    
+    input[type="text"]:focus,
+    input[type="text"].focus {
+        box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+    }
+    
+    label {
+        cursor: pointer;
+        font-weight: bold;
+    }
+    
+    #saveBtn {
+        width: 80px;
+        box-shadow: 0px 0px 1px #666666;
+        font-size: 23px;
+        padding: 15px;
+        background: #fff;
+        border: 1px solid;
+    }
+    
+    #saveBtn:hover {
+        background: #eeeeee;
+        cursor: pointer;
+    }
+    </style>
+    <script type="text/javascript" src="options.js"></script>
+</head>
+
+<body>
+    <form id="form">
+        <div id="options">
+        	<img style="margin: 5% auto;display: table;" src="../images/logo.png">
+            <h3 class="center">Sign up:</h3>
+            <div>
+                <table class="center">
+                    <tr>
+                        <td>
+                            <label for="eMail">Email: </label>
+                        </td>
+                        
+                        <td>
+                        	<input type="text" id="eMail" maxlength="50" placeholder="Email">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                        <td>
+                            <button id="signup">Sign Up</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
